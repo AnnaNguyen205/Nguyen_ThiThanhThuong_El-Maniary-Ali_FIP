@@ -45,7 +45,7 @@ h1 {
     font-family: 'hoss-roundbold';
 }
 
-h2, h3, h4, h4, h5, a {
+h2, h3, h4, h4, h5, a, input, label, textarea {
     font-family: 'avenir-medium';
 }
 
@@ -324,6 +324,93 @@ p {
     color: #ffffff;
 }
 
+/* CONTACT US PAGE */
+
+/* Contact Form */
+
+.hero {
+    width: 100%;
+    /* height: 50vh;   */
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+form{
+    width: 90%;
+    max-width: 600px;
+
+}
+
+.input-group {
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.hero input, textarea {
+    width: 100%;
+    padding: 10px;
+    outline: 0;
+    border: 1px solid #000000;
+    color: rgb(0, 0, 0);
+    background: transparent;
+    font-size: 15px;
+    font-family: 'avenir-book' !important;
+}
+
+.hero label {
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 10px;
+    color: #000000;
+    cursor: text;
+    transition:0.2s;
+}
+
+.hero button {
+    padding: 10px 0;
+    color: #ffffff;
+    outline: none;
+    background-color: #03006d;
+    border: 2px solid #910F4A;
+    width: 40%;
+    cursor: pointer;
+}
+
+.hero button:hover {
+    background-color: #FF2470;
+}
+ 
+form input:focus~label, input:valid~label, textarea:focus~label,textarea:valid~label {
+    top: -35px;
+    font-size: 14px;
+}
+
+.thanking h2 {
+    text-align: center;
+    font-size: 55px;
+    margin-top: 60px;
+    color: #03006D;
+}
+.thanking h3 {
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 50px;
+    color: #03006D;
+}
+
+/* Address and Phone */
+#address-phone {
+    margin-bottom: 30px;
+    margin-left: 10px;
+    margin-top: 30px;
+}
+
+
 
 /* ---Tablet Library Grid Styles--- */
 
@@ -481,7 +568,25 @@ p {
         margin-top: 0;
     }
 
+    /* CONTACT US PAGE */
+    /* Contact form */
+    .row {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
     
+    .row  .input-group {
+        flex-basis: 47% ;
+    }
+    
+    .hero button {
+        width: 25%;
+    }
+
+    .hero button[type="submit"] {
+        font-size: 20px;
+    }
 }
 
 
