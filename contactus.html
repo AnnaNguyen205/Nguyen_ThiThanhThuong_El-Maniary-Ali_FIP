@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orbitz's Contact Us</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/grid.css">
+    <script src="https://kit.fontawesome.com/d25d622b49.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <!-- Header -->
+    <header id="nav-con" class="grid-con">
+        <h2 class="hidden">Navigation</h2>           
+            <div id="logo" class="col-span-full">
+                <img src="images/logo.svg" alt="Orbitz Main Logo">
+            </div>
+            <nav id="main-nav" class="col-span-full">
+                <input type="checkbox" id="hamburger">
+                <label for="hamburger">
+                    <img src="images/burger-menu.svg" alt="Hamburger menu icon">
+                </label>
+                <div id="burger-con">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#">Products</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="contactus.html">Contact Us</a></li>
+                    </ul>
+                </div>
+            </nav>
+    </header>
+
+    <!-- Main Hero -->
+    <section id="main-hero" class="full-width-grid-con">
+        <h2 class="hidden">Hero Banner</h2>
+        <div class="grid-con">
+            <img src="images/hero-image-contact.jpeg"
+            alt="Hero banner" id="main-hero-image" class="col-span-full">
+        </div>
+    </section>
+
+    <!--contact form -->
+    <section class="thanking">
+        <h2>Get In Touch With Us</h2>
+        <h3>We welcome all comments and suggestions</h3>
+    </section>
+   
+    <div class="hero">
+        <form>
+            <div class="row">
+                <div class="input-group">
+                    <input type="text" id="name" required>
+                    <label for="name"> <i class="fa-solid fa-user"></i> Your Name</label>
+                </div>
+        
+                <div class="input-group">
+                    <input type="text" id="number" required>
+                    <label for="number"> <i class="fa-solid fa-phone"></i> Phone Number</label>
+                </div>
+            </div>
+           
+            <div class="input-group">
+                <input type="email" id="email" required>
+                <label for="email"> <i class="fa-solid fa-envelope"></i> Your Email</label>
+            </div>
+            <div class="input-group">
+                <textarea id="message"  rows="8" required ></textarea>
+                <label for="message"> <i class="fa-solid fa-message"></i> Your Message</label>
+            </div>
+            <button type="submit"> <i class="fa-regular fa-paper-plane"></i> Send</button>
+            
+        </form>
+    </div>
+    
+    <!-- Address and Phone -->
+    <section id="address-phone" class="grid-con">
+        <div class="col-span-full m-col-start-4 m-col-span-3 l-col-start-4 l-col-span-2">
+            <h2>Address</h2>
+            <p>123 Maple Street, Toronto, ON M5H 2N2</p>
+        </div>
+        <div class="col-span-full m-col-start-8 m-col-span-3 l-col-start-8 l-col-span-2">
+            <h2>Phone</h2>
+            <p>+1 (416) 555-7890</p>
+        </div>
+    </section>
+
+
+    <!-- Footer Section -->
+    <footer id="footer-con" class="full-width-grid-con">
+        <h2 class="hidden">Footer</h2>
+    
+        <section id="footer-info" class="col-span-full m-col-span-1">
+        <h3 class="hidden">Footer Navigation</h3>
+            <div id="logo-footer">
+                <img src="images/logo.svg" alt="Orbitz Logo">
+            </div>
+        </section>
+
+
+        <nav id="footer-nav" class="col-span-full m-col-start-2 m-col-end-9 l-col-start-2 l-col-end-8">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="contactus.html">Contact</a></li>
+                <li><a href="#">Why Orbitz?</a></li>
+                <li><a href="#">Find Orbitz</a></li>
+                <li><a href="#">Privacy</a></li>
+                <li><a href="#">FAQs</a></li>
+            </ul>
+        </nav>
+
+        <div id="footer-credits" class="col-span-full m-col-span-full l-col-start-2 l-col-end-6">
+            <p>Copyright &#169; 2024 Orbitz Official.</p>
+        </div>
+   
+    </footer>
+    
+
+    <script src="js/main.js"></script>
+    
+</body>
+</html>
