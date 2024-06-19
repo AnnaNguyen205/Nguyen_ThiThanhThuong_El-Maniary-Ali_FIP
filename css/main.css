@@ -1,0 +1,682 @@
+/* ---General Rules--- */
+
+.hidden {
+    display: none;
+}
+
+body {
+    color: black;
+    max-width: 412px;
+    min-width: 412px;
+    padding: 0 0 10px 10px;
+}
+
+.line-separator {
+    margin-top: 20px;
+    border-top: solid 3px #910F4A;
+    padding-top: 20px;
+ }
+
+@font-face {
+    font-family: 'hoss_roundbold';
+    src: url('../fonts/hoss-round-bold-webfont.woff2') format('woff2'),
+         url('../fonts/hoss-round-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'avenir-book';
+    src: url('../fonts/avenir-book-webfont.woff2') format('woff2'),
+         url('../fonts/avenir-book-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'avenir-medium';
+    src: url('../fonts/avenir-medium-webfont.woff2') format('woff2'),
+         url('../fonts/avenir-medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+h1 {
+    font-family: 'hoss-roundbold';
+}
+
+h2, h3, h4, h4, h5, a {
+    font-family: 'avenir-medium';
+}
+
+p {
+    font-family: 'avenir-book';
+}
+
+/* HOMEPAGE STYLING */
+
+/* Navigation Section */
+
+#logo img {
+    width: 200px;
+    margin: 15px 15px 0 0;
+}
+
+#nav-con {
+    background-color: #ffffff;
+    height: 100px;
+    position: relative;
+}
+ 
+#main-nav input, #burger-con {
+    display: none;
+}
+
+#main-nav label img {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    transition: all .3s ease;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+ 
+/* Burger menu */
+
+#main-nav input:checked ~ #burger-con {
+    display: block;
+    z-index: 999;
+}
+ 
+#main-nav input:checked ~ label img {
+    transform: rotate(90deg);
+}
+
+#main-nav ul {
+    list-style: none;
+    background-color: #03006D;
+    margin-top: 0;
+    padding: 0;
+}
+ 
+#main-nav ul li a {
+    display: block;
+    padding-top: 7px;
+    padding-bottom: 10px;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    margin-top: 7px;
+    font-weight: 600;
+}
+
+#main-nav ul li:first-child {
+    padding-top: 15px;
+} 
+
+#main-nav ul li:last-child {
+    padding-bottom: 20px;
+} 
+
+/* Main Hero */
+#main-hero-image {
+    width: 412px;
+}
+
+/* Welcome Section */
+#welcome {
+    margin-top: 20px;
+}
+
+#welcome h3 {
+    font-size: 45px;
+    letter-spacing: 2px;
+    color: #910F4A;
+}
+
+#welcome p {
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 27px;
+}
+
+.welcome-image {
+    margin: 40px 20px;
+    border: 3px solid #03006D;
+    transform: rotate(-5deg);
+    width: 300px;
+    height: 300px;
+    justify-content: center;
+}
+
+#welcome img {
+    height: 300px;
+    transform: rotate(10deg);
+    justify-content: center;
+}
+
+/* Features Section */
+#features {
+    margin-top: 40px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.feature_icon {
+    width: 105px;
+    height: 105px;
+    margin-bottom: 8px;
+}
+
+#features h3 {
+    font-size: 22px;
+    font-weight: bold;
+    color: #03006D;
+    letter-spacing: 1px;
+    max-width: 200px;
+    margin-top: 25px;
+    margin-bottom: 1px;
+}
+
+#features p {
+    font-size: 17px;
+    width: 170px;
+    line-height: 20px;
+}
+
+/* Products Home Section */
+
+#product-title {
+    background-color: #B50F3E;
+    background-size: cover;
+    height: 81px;
+    margin-top: 80px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+#product-title h3 {
+    font-size: 28px;
+    text-transform: uppercase;
+    margin-top: 10px;
+}
+
+#product-title p {
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: -35px;
+}
+
+#products {
+    padding-top: 30px;
+}
+
+.product h3 {
+    font-size: 16px;
+    font-weight: 800;
+    line-height: 20px;
+    color: #B50F3E;
+}
+
+#products img:first-child {
+    width: 150px;
+}
+
+.desc-cards {
+    font-weight: 700;
+    text-align: center;
+}
+
+.product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.product img {
+    border: 2px solid #03006D;
+}
+
+.product input {
+    border-radius: 10px;
+    margin-bottom: 30px;
+    font: inherit;
+    border: 0 0 20px 20px;
+}
+
+.product input[type="submit"] {
+    padding: 12px 28px;
+    background: #910F4A;
+    color: #fff;
+    border: 2px solid #03006D;
+    transition: all 200ms ease-in;
+    width: 150px;
+    font-family: 'avenir-medium';
+    font-weight: bold;
+}
+
+.product input[type="submit"]:hover {
+    background: #FF2470;
+ }
+
+/* Footer */
+
+#footer-con {
+    background-color: #910F4A;
+}
+
+#logo-footer, #logo-socmed, #footer-menu, #footer-service {
+    padding: 20px;
+}
+
+#logo-socmed img {
+    width: 30px;
+}
+
+#logo-footer img {
+    width: 230px;
+    margin-top: 30px;
+}
+
+#footer-credits {
+    text-align: center;
+    color: #ffffff;
+}
+
+#footer-info {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+#logo-footer,
+#logo-socmed {
+    justify-self: center;
+}
+
+#footer-nav,
+#footer-service {
+    display: flex;
+    justify-content: center;
+}
+
+#footer-nav ul,
+#footer-service ul {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+    text-align: center;
+}
+
+#footer-nav li,
+#footer-service li {
+    margin-bottom: 10px; 
+}
+
+#footer-nav a,
+#footer-service a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+
+/* ---Tablet Library Grid Styles--- */
+
+@media screen and (min-width: 768px) {
+    body {
+        max-width: 768px;
+        margin: 0 auto;
+    }
+
+    #logo img {
+        width: 225px;
+        margin: 5px 0 0 10px;
+    }
+
+    #main-nav label img {
+        display: none;
+    }
+
+    #burger-con {
+        display: contents;
+     }
+
+    #main-nav {
+        position: absolute;
+        left: 360px;
+        top: -10px;
+        width: 450px;
+    }
+
+    #main-nav ul {
+        background: none;
+        margin-top: 20px;
+    }
+
+    #main-nav ul li {
+        display: inline-block;
+        margin: 0 15px;
+    }
+
+    #main-nav ul li a {
+        color: #03006D;
+    }
+    
+    /* Features Section */
+    #features {
+        margin-top: 40px;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+    
+    .feature_icon {
+        width: 135px;
+        height: 135px;
+        margin-bottom: 8px;
+    }
+    
+    #features h3 {
+        font-size: 22px;
+        letter-spacing: 1px;
+        width: 170px;
+        margin-top: 15px;
+        margin-bottom: 1px;
+    }
+    
+    #features p {
+        font-size: 17px;
+        width: 170px;
+        line-height: 20px;
+    }
+
+    /* Main Hero */
+    #main-hero-image {
+        width: 768px;
+    }
+
+    /* Welcome Section */
+    #welcome {
+        display: flex;
+        justify-content: space-between;
+        margin: 20px 40px 20px 40px;
+    }
+    
+    #welcome h3 {
+        font-size: 42px;
+        letter-spacing: 2px;
+    }
+    
+    #welcome p {
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 24px;
+    }
+
+    .welcome-image {
+        margin: 40px 20px;
+        border: 3px solid #03006D;
+        transform: rotate(-5deg);
+        width: 200px;
+        height: 200px;
+        justify-content: center;
+        margin-top: 180px;
+    }
+    
+    #welcome img {
+        height: 200px;
+        transform: rotate(10deg);
+    }
+
+    /* Products Section */
+    #product-title {
+        height: 136px;
+        margin-top: 5px;
+        margin-bottom: 20px;
+    }
+    
+    #product-title h3 {
+        font-size: 50px;
+        margin-top: 10px;
+    }
+    
+    #product-title p {
+        font-size: 28px;
+        margin-top: -60px;
+    }
+    
+    .product h3 {
+        font-size: 15px;
+        width: 200px;
+    }
+    
+    #products {
+        padding-top: 25px;
+    }
+
+    /* Footer */
+    #footer-nav ul,
+    #footer-service ul {
+        list-style: none;
+        padding: 0;
+        text-align: left;
+    }
+
+    #footer-nav {
+        display: block;
+        margin-top: 40px;
+        padding-top: 0;
+        margin-bottom: 0;
+        margin-left: 50px;
+        column-count: 2;
+    }
+
+    #footer-nav ul {
+        width: 200px;
+        padding-top: 0;
+        margin-top: 0;
+    }
+
+    
+}
+
+
+/* ---Desktop Library Grid Styles--- */
+
+@media screen and (min-width: 1200px) {
+    body {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    #logo img {
+        width: 240px;
+        margin: 5px 0 0 15px;
+    }
+
+    #main-nav label img {
+        display: none;
+    }
+
+    #burger-con {
+        display: contents;
+     }
+
+    #main-nav {
+        position: absolute;
+        left: 700px;
+        top: -10px;
+        width: 500px;
+     }
+
+    #main-nav ul {
+        background: none;
+        margin-top: 20px;
+    }
+
+    #main-nav ul li {
+        display: inline-block;
+        margin: 0 15px;
+        font-size: 20px;
+    }
+
+    #main-nav ul li a:hover {
+        text-decoration: underline;
+    }
+
+    /* Main Hero */
+    #main-hero-image {
+        width: 1200px;
+    }
+
+    .refresh h2 {
+        font-size: 12px;
+    }
+
+    /* Welcome Section */
+    #welcome {
+        display: flex;
+        justify-content: space-between;
+        margin: 20px 50px 20px 50px;
+    }
+    
+    #welcome h3 {
+        font-size: 50px;
+        letter-spacing: 2px;
+    }
+    
+    #welcome p {
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 41px;
+    }
+
+    #welcome img {
+        width: 200px;
+    }
+
+    .welcome-image {
+        margin: 40px 20px;
+        border: 3px solid #03006D;
+        transform: rotate(-5deg);
+        width: 200px;
+        height: 200px;
+        justify-content: center;
+        margin-top: 180px;
+    }
+    
+    #welcome img {
+        height: 200px;
+        width: 200px;
+        transform: rotate(10deg);
+    }
+
+    /* Feature Section */
+    #features {
+        margin-top: 40px;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+    
+    .feature_icon {
+        width: 135px;
+        height: 135px;
+        margin-bottom: 8px;
+    }
+    
+    #features h3 {
+        font-size: 30px;
+        letter-spacing: 1px;
+        width: 170px;
+        margin-top: 15px;
+        margin-bottom: 1px;
+        text-align: center;
+    }
+    
+    #features p {
+        font-size: 17px;
+        width: 170px;
+        line-height: 20px;
+    }
+
+    /* Products Section */
+    #product-title {
+        height: 136px;
+        margin-top: 5px;
+        margin-bottom: 20px;
+    }
+    
+    #product-title h3 {
+        font-size: 50px;
+        margin-top: 10px;
+    }
+    
+    #product-title p {
+        font-size: 28px;
+        margin-top: -60px;
+    }
+    
+    .product h3 {
+        font-size: 23px;
+        width: 200px;
+        line-height: 32px;
+    }
+    
+    #products {
+        padding-top: 25px;
+    }
+
+    /* Footer */
+    #footer-nav ul,
+    #footer-service ul {
+        list-style: none;
+        padding: 0;
+        text-align: left;
+    }
+
+    #footer-nav {
+        display: block;
+        margin-top: 40px;
+        padding-top: 0;
+        margin-bottom: 0;
+        margin-left: 50px;
+        column-count: 2;
+    }
+
+    #footer-nav ul {
+        width: 200px;
+        padding-top: 0;
+        margin-top: 0;
+    }
+
+    #logo-socmed {
+        margin-left: 45px; 
+    }
+
+    #footer-info {
+        display: block;
+        margin-left: 40px;
+    }
+    
+    #footer-info {
+        display: block;
+        margin-left: 60px;
+    }
+
+    #footer-nav {
+        display: block;
+        margin-top: 40px;
+        padding-top: 0;
+        margin-bottom: 0;
+        margin-left: 300px;
+        column-count: 2;
+        }
+    
+    #footer-credits {
+        margin-left: -180px;;
+    }
+}
