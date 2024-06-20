@@ -6,8 +6,6 @@
 
 body {
     color: black;
-    max-width: 412px;
-    min-width: 412px;
     padding: 0 0 10px 10px;
 }
 
@@ -118,11 +116,6 @@ p {
 #main-nav ul li:last-child {
     padding-bottom: 20px;
 } 
-
-/* Main Hero */
-#main-hero-image {
-    width: 412px;
-}
 
 /* Welcome Section */
 #welcome {
@@ -416,7 +409,6 @@ form input:focus~label, input:valid~label, textarea:focus~label,textarea:valid~l
 
 @media screen and (min-width: 768px) {
     body {
-        max-width: 768px;
         margin: 0 auto;
     }
 
@@ -481,11 +473,6 @@ form input:focus~label, input:valid~label, textarea:focus~label,textarea:valid~l
         line-height: 20px;
     }
 
-    /* Main Hero */
-    #main-hero-image {
-        width: 768px;
-    }
-
     /* Welcome Section */
     #welcome {
         display: flex;
@@ -511,7 +498,6 @@ form input:focus~label, input:valid~label, textarea:focus~label,textarea:valid~l
         width: 200px;
         height: 200px;
         justify-content: center;
-        margin-top: 180px;
     }
     
     #welcome img {
@@ -594,7 +580,6 @@ form input:focus~label, input:valid~label, textarea:focus~label,textarea:valid~l
 
 @media screen and (min-width: 1200px) {
     body {
-        max-width: 1200px;
         margin: 0 auto;
     }
 
@@ -634,10 +619,6 @@ form input:focus~label, input:valid~label, textarea:focus~label,textarea:valid~l
     }
 
     /* Main Hero */
-    #main-hero-image {
-        width: 1200px;
-    }
-
     .refresh h2 {
         font-size: 12px;
     }
@@ -671,7 +652,6 @@ form input:focus~label, input:valid~label, textarea:focus~label,textarea:valid~l
         width: 200px;
         height: 200px;
         justify-content: center;
-        margin-top: 180px;
     }
     
     #welcome img {
