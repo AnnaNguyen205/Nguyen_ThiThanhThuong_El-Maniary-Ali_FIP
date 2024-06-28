@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orbitz's Home</title>
+    <link href="css/main.css" rel="stylesheet" type="text/css">
+    <link href="css/grid.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <h1 class="hidden">Orbitz's Home</h1>
+
+    <!-- Header -->
+    <header id="nav-con" class="grid-con">
+        <h2 class="hidden">Navigation</h2>           
+            <div id="logo" class="col-span-full">
+                <img src="images/logo.svg" alt="Orbitz Main Logo">
+            </div>
+            <nav id="main-nav" class="col-span-full">
+                <input type="checkbox" id="hamburger">
+                <label for="hamburger">
+                    <img src="images/burger-menu.svg" alt="Hamburger menu icon">
+                </label>
+                <div id="burger-con">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#">Products</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="contactus.html">Contact Us</a></li>
+                    </ul>
+                </div>
+            </nav>
+    </header>
+
+
+    <!-- Main Hero -->
+    <section id="main-hero" class="full-width-grid-con">
+        <h2 class="hidden">Hero Banner</h2>
+        <div class="grid-con">
+            <img 
+            sizes="(max-width: 2240px) 100vw, 2240px"
+            srcset="
+            images/home-hero_xivncp_c_scale,w_200.png 200w,
+            images/home-hero_xivncp_c_scale,w_658.png 658w,
+            images/home-hero_xivncp_c_scale,w_952.png 952w,
+            images/home-hero_xivncp_c_scale,w_1193.png 1193w,
+            images/home-hero_xivncp_c_scale,w_1388.png 1388w,
+            images/home-hero_xivncp_c_scale,w_1568.png 1568w,
+            images/home-hero_xivncp_c_scale,w_1723.png 1723w,
+            images/home-hero_xivncp_c_scale,w_1874.png 1874w,
+            images/home-hero_xivncp_c_scale,w_2008.png 2008w,
+            images/home-hero_xivncp_c_scale,w_2132.png 2132w,
+            images/home-hero_xivncp_c_scale,w_2240.png 2240w"
+            src="home-hero_xivncp_c_scale,w_2240.png"
+            alt="Hero banner" id="main-hero-image" class="col-span-full">
+        </div>
+    </section>
+
+    <!-- Welcome Section -->
+    <section id="welcome" class="grid-con">
+        <h2 class="hidden">Welcome to Orbitz Website</h2>
+            <div class="col-span-full m-col-span-full l-col-start-9 l-col-end-10">
+                <h3>Welcome to Orbitz Website</h3>
+                <p>Welcome to Orbitz, where innovation meets refreshment. At Orbitz, we're dedicated to providing you with a unique and delightful drinking experience. Our beverages are not only delicious but also crafted with the utmost care for the environment. With a variety of exciting flavors like Peach, Kiwi, and Watermelon, there's something for everyone to enjoy. Join us on a journey of taste and sustainability, as we strive to quench your thirst and protect our planet. Sip, savor, and smile with Orbitz!</p>
+            </div>
+            <div class="welcome-image col-span-full m-col-start-10 m-col-span-1 l-col-start-4 l-col-end-5">
+                <img src="images/Welcome-orbitz.png" alt="Welcome Orbitz">
+            </div>
+        </section>
+
+    <!-- Products Section -->
+    <section id="product-title" class="full-width-grid-con">
+        <h2 class="hidden">Products Title</h2>
+            <div class="grid-con">
+            <h3 class="col-span-full m-col-span-full l-col-span-full">Our Delicious Drinks</h3>
+            <p class="col-span-full m-col-span-full l-col-span-full">Enjoy our new selected flavors!</p>
+            </div>
+        </section>
+    
+        <section id="products" class="grid-con">
+        <h2 class="hidden">Products List</h2>
+    
+            <div class="product col-span-full m-col-start-3 m-col-span-2 l-col-start-3 l-col-span-2">
+                <img src="images/product-peach.png" alt="Product Peach">
+                <h3 class="desc-cards">Refreshingly Sweet<br>Peach Flavor</h3>
+                <input name="submit" type="submit" value="Buy Now">
+            </div>
+    
+            <div class="product col-start-1 col-end-3 m-col-start-6 m-col-span-2 l-col-start-6 l-col-span-2">
+                <img src="images/product-kiwi.png" alt="Product Kiwi">
+                <h3 class="desc-cards">Tangy Kiwi<br>Flavor Explosion</h3>
+                <input name="submit" type="submit" value="Buy Now">
+            </div>
+    
+            <div class="product col-start-3 col-end-5 m-col-start-9 m-col-span-2 l-col-start-9 l-col-span-2">
+                <img src="images/product-watermelon.png" alt="Product Watermelon">
+                <h3 class="desc-cards">Cool and Juicy<br>Watermelon Flavor</h3>
+                <input name="submit" type="submit" value="Buy Now">
+            </div>
+    
+        </section>
+
+    <!-- Features Section -->
+    <section id="features" class="grid-con line-separator">
+        <h2 class="hidden">Features</h2>
+            <div class="col-start-1 col-end-3 m-col-start-1 m-col-span-2 l-col-start-3 l-col-span-2">
+                <img src="images/icon-fruit.svg" alt="Icon Fruit Flavours" class="feature_icon">
+                <h3>Fruit Flavoured</h3>
+                <p>Naturally Delicious Fruit Essence</p>
+            </div>
+            <div class="col-start-3 col-end-5 m-col-start-4 m-col-span-2 l-col-start-5 l-col-span-2">
+                <img src="images/icon-tasty.svg" alt="Icon Tasty" class="feature_icon">
+                <h3>Tasty Temptation</h3>
+                <p>Irresistible Flavor in Every Sip</p>
+            </div>
+            <div class="col-start-1 col-end-3 m-col-start-7 m-col-span-2 l-col-start-7 l-col-span-2">
+                <img src="images/icon-environment.svg" alt="Icon Environment" class="feature_icon">
+                <h3>Eco - Friendly</h3>
+                <p>Sustainable Choices for a Greener Tomorrow</p>
+            </div>
+            <div class="col-start-3 col-end-5 m-col-start-10 m-col-span-2 l-col-start-9 l-col-span-2">
+                <img src="images/icon-recycle.svg" alt="Icon Recycle" class="feature_icon">
+                <h3>Material Recyclable</h3>
+                <p>Committed to Recyclable Packaging</p>
+            </div>
+        </section>
+
+    <!-- Footer Section -->
+<footer id="footer-con" class="full-width-grid-con">
+    <h2 class="hidden">Footer</h2>
+   
+    <section id="footer-info" class="col-span-full m-col-span-1">
+    <h3 class="hidden">Footer Navigation</h3>
+        <div id="logo-footer">
+            <img src="images/logo.svg" alt="Orbitz Logo">
+        </div>
+    </section>
+
+
+        <nav id="footer-nav" class="col-span-full m-col-start-2 m-col-end-9 l-col-start-2 l-col-end-8">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="contactus.html">Contact</a></li>
+                <li><a href="#">Why Orbitz?</a></li>
+                <li><a href="#">Find Orbitz</a></li>
+                <li><a href="#">Privacy</a></li>
+                <li><a href="#">FAQs</a></li>
+            </ul>
+        </nav>
+
+        <div id="footer-credits" class="col-span-full m-col-span-full l-col-start-2 l-col-end-6">
+            <p>Copyright &#169; 2024 Orbitz Official.</p>
+        </div>
+   
+    </footer>
+    
+
+    <script src="js/main.js"></script>
+</body>
+</html>
