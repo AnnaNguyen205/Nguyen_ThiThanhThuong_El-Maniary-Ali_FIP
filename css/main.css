@@ -117,6 +117,30 @@ p, li {
     padding-bottom: 20px;
 } 
 
+/* Banner */
+
+.main-hero-image-div {
+    position: absolute;
+    z-index: 1;
+}
+
+.hero-heading-box {
+    align-self: end;
+    position: absolute;
+    z-index: 3;
+    justify-self: center;
+    width: 90%;
+}
+
+.hero-img-h2 {
+    background-color: #B50F3E;
+    color: white;
+    text-align: center;
+    padding: 12px 12px;
+    font-size: 24px;
+    margin-bottom: 4px;
+}
+
 /* Welcome Section */
 #welcome {
     margin-top: 20px;
@@ -219,6 +243,10 @@ p, li {
     width: 150px;
 }
 
+.best-drink-h2 {
+    display: none;
+}
+
 .desc-cards {
     font-weight: 700;
     text-align: center;
@@ -264,7 +292,7 @@ p, li {
 /* Footer */
 
 #footer-con {
-    background-color: #910F4A;
+    background-color: black;
 }
 
 #logo-footer, #logo-socmed, #footer-menu, #footer-service {
@@ -598,6 +626,17 @@ form input:focus~label, input:valid~label, textarea:focus~label,textarea:valid~l
         width: 170px;
         line-height: 20px;
     }
+    
+    /* Banner */
+    .hero-heading-box {
+        width: 70%;
+    }
+    
+    .hero-img-h2 {
+        padding: 20px 20px;
+        font-size: 32px;
+        margin-bottom: 4px;
+    }
 
     /* Welcome Section */
     #welcome {
@@ -655,6 +694,12 @@ form input:focus~label, input:valid~label, textarea:focus~label,textarea:valid~l
     
     #products {
         padding-top: 25px;
+    }
+    .best-drink-h2 {
+        display: block;
+        font-size: 32px;
+        color: #910F4A;
+        font-weight: bold;
     }
 
     /* Footer */
@@ -754,6 +799,19 @@ form input:focus~label, input:valid~label, textarea:focus~label,textarea:valid~l
     /* Main Hero */
     .refresh h2 {
         font-size: 12px;
+    }
+
+    /* Banner */
+    .hero-heading-box {
+        width: 65%;
+        justify-self: right;
+        margin-right: 4%;
+    }
+    
+    .hero-img-h2 {
+        padding: 30px 20px;
+        font-size: 38px;
+        margin-bottom: 4px;
     }
 
     /* Welcome Section */
