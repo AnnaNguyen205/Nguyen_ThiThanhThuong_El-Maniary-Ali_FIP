@@ -558,6 +558,12 @@ form input:focus~label, input:valid~label, textarea:focus~label,textarea:valid~l
     justify-self: center;
 }
 
+/* Video Section */
+#video-section {
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
 
 /* ---Tablet Library Grid Styles--- */
 
