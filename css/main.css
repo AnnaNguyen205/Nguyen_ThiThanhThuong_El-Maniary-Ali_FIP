@@ -84,6 +84,7 @@ p, li {
 
 #main-nav input:checked ~ #burger-con {
     display: block;
+    position: relative;
     z-index: 999;
 }
  
@@ -117,6 +118,21 @@ p, li {
     padding-bottom: 20px;
 } 
 
+/* Slogan */
+.slogan-home-page {
+    position: absolute;
+    z-index: 2;
+    margin-left: 18%;
+    margin-top: 4%;
+}
+
+.slogan-home-page h2 {
+    font: 'hoss-roundbold';
+    font-size: 18px;
+    text-align: center;
+    color: #B50F3E;
+}
+
 /* Banner */
 
 .main-hero-image-div {
@@ -130,6 +146,22 @@ p, li {
     z-index: 3;
     justify-self: center;
     width: 90%;
+}
+
+.hero-heading-box-home {
+    align-self: end;
+    position: absolute;
+    z-index: 4;
+    justify-self: center;
+    width: 90%;
+}
+
+.hero-heading-box-products {
+    align-self: center;
+    position: absolute;
+    z-index: 5;
+    justify-self: center;
+    width: 80%;
 }
 
 .hero-img-h2 {
@@ -463,7 +495,7 @@ form input:focus~label, input:valid~label, textarea:focus~label,textarea:valid~l
 
 .info-button {
     position: absolute;
-    bottom: 34%;
+    bottom: 36%;
     left: 65%;
     transform: translateX(-50%);
     padding: 0.5em 1em;
@@ -473,20 +505,8 @@ form input:focus~label, input:valid~label, textarea:focus~label,textarea:valid~l
     color: black;
     cursor: pointer;
     z-index: 10;
-    animation: MoveUpDown 1s linear infinite;
 }
 
-@keyframes MoveUpDown {
-    0% {
-        bottom: 34%;
-    }
-    50% { 
-        bottom: 37%;
-    }
-    100% {
-        bottom: 34%;
-    }
-}
 
 #product-info {
     position: fixed;
@@ -632,10 +652,24 @@ form input:focus~label, input:valid~label, textarea:focus~label,textarea:valid~l
         width: 170px;
         line-height: 20px;
     }
+
+        /* Slogan */
+    .slogan-home-page {
+        margin-left: 20%;
+        margin-top: 6%;
+    }
+
+    .slogan-home-page h2 {
+        font-size: 32px;
+    }
     
     /* Banner */
     .hero-heading-box {
-        width: 70%;
+        width: 60%;
+    }
+
+    .hero-heading-box-products {
+        width: 60%;
     }
     
     .hero-img-h2 {
@@ -807,11 +841,28 @@ form input:focus~label, input:valid~label, textarea:focus~label,textarea:valid~l
         font-size: 12px;
     }
 
+        /* Slogan */
+    .slogan-home-page {
+        margin-left: 22%;
+        margin-top: 8%;
+    }
+
+    .slogan-home-page h2 {
+        font-size: 40px;
+    }
+
     /* Banner */
     .hero-heading-box {
         width: 65%;
         justify-self: right;
         margin-right: 4%;
+    }
+
+    .hero-heading-box-home {
+        width: 65%;
+        justify-self: left;
+        margin-left: 4%;
+        width: 55%;
     }
     
     .hero-img-h2 {
