@@ -4,6 +4,9 @@ const productInfo = [
     "Peach Orbitz offers a sweet and juicy taste, providing a perfect balance of flavor and health benefits like improved digestion."
 ];
 
+const promoDetails = "Enjoy our '2 for 1' special! Buy one Orbitz drink and get another of the same flavor for free. This offer is valid for a limited time only, so don't miss out on doubling your refreshment!";
+
+// More Info button Function
 document.addEventListener('DOMContentLoaded', () => {
     const infoButtons = document.querySelectorAll('.info-button');
     const productInfoDiv = document.getElementById('product-info');
@@ -25,6 +28,29 @@ document.addEventListener('DOMContentLoaded', () => {
     productInfoDiv.addEventListener('click', (e) => {
         if (e.target === productInfoDiv) {
             productInfoDiv.classList.add('hidden');
+        }
+    });
+});
+
+// Promo Function
+document.addEventListener('DOMContentLoaded', () => {
+    const promoButton = document.getElementById('promo-button');
+    const promoDetailsDiv = document.getElementById('promo-details');
+    const promoText = document.getElementById('promo-text');
+    const closePromo = document.getElementById('close-promo');
+
+    promoButton.addEventListener('click', () => {
+        promoText.textContent = promoDetails;
+        promoDetailsDiv.classList.remove('hidden');
+    });
+
+    closePromo.addEventListener('click', () => {
+        promoDetailsDiv.classList.add('hidden');
+    });
+
+    promoDetailsDiv.addEventListener('click', (e) => {
+        if (e.target === promoDetailsDiv) {
+            promoDetailsDiv.classList.add('hidden');
         }
     });
 });
