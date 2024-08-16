@@ -531,6 +531,37 @@ form input:focus~label, input:valid~label, textarea:focus~label,textarea:valid~l
     font-size: 1.5em;
 }
 
+/* Promo section */
+.promo-button {
+    padding: 10px 20px;
+    background-color: #03006D;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 20px 0;
+    text-align: center;
+    width: 100%;
+}
+
+.promo-details {
+    padding: 20px;
+    background-color: #f0f0f0;
+    color: #03006D;
+    border: 1px solid #03006D;
+    margin-top: 5px;
+}
+
+.close-promo-button {
+    margin-top: 10px;
+    padding: 5px 10px;
+    background-color: #03006D;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+
 /* ABOUT US PAGE */
 
 .about-us {
@@ -764,6 +795,22 @@ form input:focus~label, input:valid~label, textarea:focus~label,textarea:valid~l
         padding-top: 0;
         margin-top: 0;
     }
+
+    /* PRODUCTS PAGE */
+
+    /* Promo section */
+    .promo-button {
+        font-size: 20px;
+    }
+
+    .promo-details p{
+        font-size: 20px;
+    }
+
+    .close-promo-button {
+        font-size: 16px;
+    }
+
 
     /* CONTACT US PAGE */
     /* Contact form */
